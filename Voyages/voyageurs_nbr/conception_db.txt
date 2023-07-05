@@ -1,0 +1,21 @@
+Conception de la base de données: dbvoyageurs (SGBD = Mysql)
+
+create database dbvoyageurs character set'utf8';
+
+use dbvoyageurs;
+
+create table voyage(
+idvoy int auto_increment primary key,
+villedep varchar(60) not null,
+villedest varchar(60) not null,
+nbpassagers smallint not null,
+jour smallint not null,
+mois smallint not null,
+annee smallint not null)
+engine=innodb;
+
+
+
+
+
+
